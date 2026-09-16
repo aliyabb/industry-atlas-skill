@@ -1,0 +1,23 @@
+{
+  "skill_name": "industry-atlas",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I just finished a master's in computer science and want to work as a product manager in AI. Build me a knowledge base about the AI agents industry like a proper research vault, in English, private GitHub repo under my account. Start with phase 1 and stop after it.",
+      "expected_output": "Intake summary confirmed or defaults stated; atlas.config.yaml with 8-14 AI-agent segments; scaffolded repo; localized Conventions.md and Industry-Taxonomy.md with axes, segment tree (Mermaid), summary table, value chain, PM lens and edge cases; folder READMEs rewritten; validator passes; phase-1 commit; stops after Phase 1 with a checkpoint message.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Хочу понять игровую индустрию перед поиском работы. Сделай базу знаний на русском, регионы US, EU, Asia. Сейчас нужна только фаза 2B: 40 компаний для теста, сегменты уже есть в конфиге.",
+      "expected_output": "Company YAML data written outside the repo in batches, gen_company_cards.py run with Russian labels from the config, 40 cards plus master README grouped by region, dated metrics with confidence levels and ⚠️ markers, search-based social links, validator (with --mixed-script) passes, commit for phase 2B.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "It's Monday. Make the weekly report for my cybersecurity atlas in ~/code/cyber-atlas and update whatever cards need updating.",
+      "expected_output": "Chooses the ISO week that just ended and says so; creates the draft with new_weekly_report.py; researches in parallel; excludes items whose publication date is outside the week; recomputes in-scope deal totals; updates affected company cards, trend signals and regulation files; adds the report to Reports/README.md; validator passes; commit 'monitor: weekly report YYYY-Www'; replies with headlines, updates and sources.",
+      "files": []
+    }
+  ]
+}

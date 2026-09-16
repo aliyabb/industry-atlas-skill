@@ -1,0 +1,41 @@
+# Industry Atlas configuration — copy to the atlas root as atlas.config.yaml
+industry: "AI Agents"
+atlas_title: "AI Agents Atlas"
+industry_tag: aiagents             # first tag of every file
+content_language: en               # language of prose and headings
+purpose: career                    # career | founder | investor | consultant | learning
+profile: >
+  MSc Computer Science; two internships (ML engineering, product analytics);
+  target role: associate product manager; open to US, EU, UK, Singapore.
+regions: [global, us, eu, uk, asia]
+region_values: [global, us, eu, uk, asia, latam, mena, africa]
+as_of: 2026-09-14                  # today's date during the initial build
+owner: your-github-username
+repo: ai-agents-atlas
+visibility: private
+depth: standard                    # lite | standard | deep
+autonomy: checkpoint               # checkpoint | autonomous
+verification_marker: "⚠️"
+
+# Filled in Phase 1 (key = segment tag)
+segments:
+  - {key: platforms, name: "Agent Platforms", folder: Agent-Platforms, overview: Agent-Platforms-Overview.md}
+  - {key: tooling, name: "Developer Tooling", folder: Developer-Tooling, overview: Developer-Tooling-Overview.md}
+
+# Optional: master-table groups for 02-Companies
+# company_groups:
+#   - {key: US, title: "🇺🇸 United States"}
+#   - {key: EU, title: "🇪🇺 European Union"}
+#   - {key: Failures, title: "💥 Notable failures"}
+
+# Cyrillic atlases: catch words mixing Latin and Cyrillic letters
+mixed_script_check: false
+mixed_script_allow: []
+
+# Translations of generated headings (keys: scripts/atlas_common.py DEFAULT_LABELS)
+# labels:
+#   company:
+#     snapshot: "📇 Паспорт"
+#     why: "🧭 Почему важна"
+#   opportunity_map:
+#     heading: "🗺️ Карта возможностей"

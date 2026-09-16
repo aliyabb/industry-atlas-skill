@@ -1,0 +1,50 @@
+# ===== Secrets and tokens: never commit =====
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+secrets.*
+*.secret
+*.token
+token.txt
+credentials*.json
+service-account*.json
+.netrc
+# Avoid broad patterns like *token* or *secret*: on case-insensitive
+# file systems they would hide notes such as Tokenization.md.
+
+# ===== Private notes and raw data (keep out of the repo) =====
+_private/
+drafts-private/
+*.private.md
+_data/
+exports/raw/
+
+# ===== Obsidian =====
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.obsidian/plugins/*/data.json
+.trash/
+
+# ===== OS and editors =====
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+
+# ===== Scripts =====
+__pycache__/
+*.pyc
+.venv/
+venv/
+node_modules/
+*.log
